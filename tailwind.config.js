@@ -9,19 +9,23 @@ export default {
 					DEFAULT: "#7C3AED",
 				},
 				secondary: {
-					light: "#FE640B",
-					DEFAULT: "#44403C",
-				},
-				terciary: {
 					light: "#9DE7D3",
 					DEFAULT: "#4BD2AE",
 				},
+				highlight: {
+					light: "#FF9A5C",
+					DEFAULT: "#FE640B",
+					dark: "#B84600",
+				},
+				chars: {
+					light: "#57534e",
+					DEFAULT: "#44403C",
+					strong: "#292524",
+				},
 			},
-		},
-	},
-	extend: {
-		fontFamily: {
-			primary: ["Plus Jakarta Sans"],
+			fontFamily: {
+				primary: ["Plus Jakarta Sans"],
+			},
 		},
 	},
 	plugins: [],

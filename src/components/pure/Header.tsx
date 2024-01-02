@@ -1,4 +1,4 @@
-import { DarkThemeIcon, LightThemeIcon, ScriptIcon } from "./icons";
+import { LightThemeIcon, ScriptIcon } from "./icons";
 
 export default function Header() {
 	return (
@@ -9,9 +9,9 @@ export default function Header() {
 					<MenuIcon />
 				</button> */}
 				{/* logo + nav desktop */}
-				<div className="flex items-baseline gap-4 pl-4 text-violet-600 duration-200">
+				<div className="text-highlight flex items-baseline gap-4 pl-4 duration-200">
 					<ScriptIcon />
-					<h1 className="text-xl font-bold text-stone-700">
+					<h1 className="text-chars text-xl font-bold">
 						Federico Baez
 					</h1>
 				</div>
@@ -43,11 +43,11 @@ export default function Header() {
 				</div>
 
 				<div className="flex items-center gap-4 pr-4">
-					<button className="rounded-full text-stone-500 transition-colors hover:text-violet-600">
+					<button className="text-chars-light hover:text-highlight active:text-highlight-light rounded-full transition-colors">
 						<LightThemeIcon />
 						{/* <DarkThemeIcon /> */}
 					</button>
-					<button className="h-8 w-8 rounded-full font-semibold text-stone-500 transition-colors hover:text-violet-600">
+					<button className="text-chars-light hover:text-highlight active:text-highlight-light h-8 w-8 rounded-full font-semibold transition-colors">
 						EN
 					</button>
 				</div>
