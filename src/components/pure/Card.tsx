@@ -47,17 +47,17 @@ export default function Card({
 	};
 
 	return (
-		<article className="overflow-hidden rounded bg-white shadow sm:flex">
-			<div className="h-52">
+		<article className="overflow-hidden rounded bg-white shadow sm:flex sm:overflow-visible sm:rounded-none sm:bg-transparent sm:shadow-none">
+			<div className="h-54 sm:w-[100%] sm:shadow-lg">
 				<img
 					src={cardImg}
 					alt="Calculator App Thumbnail"
 					height="218px"
 					width="428px"
-					className="h-full w-full object-cover object-center"
+					className="h-full w-full object-cover object-center shadow sm:rounded"
 				></img>
 			</div>
-			<div className="space-y-3 p-5">
+			<div className="space-y-2 p-5 sm:min-w-[391px] sm:py-3 sm:pl-5 sm:pr-0">
 				<div className="text-small flex font-semibold">
 					{cardTechs.map((tech, index) => (
 						<span className="mr-4" key={index}>

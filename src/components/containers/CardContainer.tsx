@@ -17,21 +17,21 @@ export default function CardContainer() {
 				cardImg="/Calculator-Thumbnail.png"
 				cardTechs={["HTML", "CSS", "SCSS", "JS", "ReactJS"]}
 				cardTitle="Calculator Web App"
-				cardDescription="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, vero qui? Quia magnam eius repellendus."
+				cardDescription="Minimalistic carculator capable of solving simple math operations, with theme selector and local storage."
 				cardLiveLink="https://federico-baez.github.io/Calculator-App-React/"
 			/>
 			<Card
 				cardImg="/Shortener-Thumbnail.png"
 				cardTechs={["HTML", "CSS", "SCSS", "JS", "ReactJS"]}
 				cardTitle="URL Shortener Web App"
-				cardDescription="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, vero qui? Quia magnam eius repellendus."
+				cardDescription="Makes your links shorter, integrated with the Short.io API, and local storage to save the shortened links."
 				cardLiveLink="https://federico-baez.github.io/URL-Shortener-App-React/"
 			/>
 			<Card
 				cardImg="/Landing-Thumbnail.png"
 				cardTechs={["HTML", "CSS", "SCSS"]}
 				cardTitle="Responsive Landing Page"
-				cardDescription="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, vero qui? Quia magnam eius repellendus."
+				cardDescription="Landing page with a responsive layout to improve the user experience, inspired by a public Figma design."
 				cardLiveLink="https://federico-baez.github.io/Landing-Page/"
 			/>
 			{/* <Card

@@ -8,7 +8,7 @@ export default function LandingPage() {
 	return (
 		<div>
 			<Header />
-			<main className="mx-auto grid max-w-2xl gap-8 px-4 pb-8 pt-4">
+			<main className="mx-auto grid max-w-3xl gap-8 px-4 pb-8 pt-4">
 				{/* About me section */}
 				<PresentationContainer />
 				{/* Experience section */}

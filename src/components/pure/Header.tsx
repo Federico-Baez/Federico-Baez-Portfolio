@@ -3,7 +3,7 @@ import { LightThemeIcon, ScriptIcon } from "./icons";
 export default function Header() {
 	return (
 		<header className="sticky bg-white shadow">
-			<div className="mx-auto flex h-16 max-w-2xl items-center justify-between">
+			<div className="mx-auto flex h-16 max-w-3xl items-center justify-between">
 				{/* nav movil menu button */}
 				{/* <button className="-m-1 mr-8 rounded p-1 text-stone-500 transition-colors hover:bg-stone-200 hover:text-violet-600 focus:ring-2 focus:ring-stone-500">
 					<MenuIcon />
