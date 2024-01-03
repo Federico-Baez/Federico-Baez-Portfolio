@@ -53,11 +53,12 @@ export default function Card({
 	const { t } = useTranslation();
 
 	return (
-		<article className="overflow-hidden rounded bg-white shadow sm:flex sm:overflow-visible sm:rounded-none sm:bg-transparent sm:shadow-none">
+		<article className="overflow-hidden rounded bg-white shadow sm:flex sm:overflow-visible sm:rounded-none sm:bg-transparent sm:shadow-none dark:bg-[#56524D]">
 			<div className="h-54 sm:w-[100%] sm:shadow-lg">
 				<img
 					src={cardImg}
 					alt="Calculator App Thumbnail"
+					rel="preload"
 					height="218px"
 					width="428px"
 					className="h-full w-full object-cover object-center shadow sm:rounded"
@@ -71,22 +72,24 @@ export default function Card({
 							key={index}
 						>
 							{techLogoSelector(tech)}
-							<span className="before:dark:gray-800 pointer-events-none absolute bottom-full left-1/2 z-20 -translate-x-1/2 -translate-y-0 whitespace-nowrap rounded-md bg-gray-800 px-1.5 py-1 text-xs text-gray-200 opacity-0 transition-all before:absolute before:-bottom-1 before:left-1/2 before:-z-10 before:h-2.5 before:w-2.5 before:-translate-x-1/2 before:rotate-45 before:rounded-sm before:bg-gray-800 before:content-[''] group-hover/tooltip:-translate-y-3 group-hover/tooltip:opacity-100 dark:bg-white dark:text-gray-700 before:dark:bg-white">
+							<span className="bg-chars before:bg-chars dark:text-chars dark:stone-300 pointer-events-none absolute bottom-full left-1/2 z-20 -translate-x-1/2 -translate-y-0 whitespace-nowrap rounded-md px-1.5 py-1 text-xs text-stone-200 opacity-0 transition-all before:absolute before:-bottom-1 before:left-1/2 before:-z-10 before:h-2.5 before:w-2.5 before:-translate-x-1/2 before:rotate-45 before:rounded-sm before:content-[''] group-hover/tooltip:-translate-y-3 group-hover/tooltip:opacity-100 dark:bg-stone-200 before:dark:bg-stone-200">
 								{tech}
 							</span>
 						</div>
 					))}
 				</div>
-				<h2 className="text-chars-strong text-2xl font-semibold leading-tight">
+				<h2 className="text-chars-strong dark:text-dark-chars-strong text-2xl font-semibold leading-tight">
 					{cardTitle}
 				</h2>
-				<p className="text-chars-light">{cardDescription}</p>
+				<p className="text-chars-light dark:text-dark-chars-light">
+					{cardDescription}
+				</p>
 				<div className="flex gap-3">
 					<a
 						href={cardCodeLink}
 						target="_blank"
 						rel="noopener noreferrer"
-						className="bg-chars hover:bg-highlight active:bg-highlight-light group inline-flex cursor-pointer items-center gap-2 rounded px-3 py-1 text-lg font-semibold text-white transition-all "
+						className="bg-chars dark:bg-dark-chars hover:bg-highlight dark:hover:bg-highlight dark:hover:text-background dark:active:bg-highlight-light  active:bg-highlight-light dark:text-dark-background group inline-flex cursor-pointer items-center gap-2 rounded px-3 py-1 text-lg font-semibold text-white transition-all "
 					>
 						{t("button_code")}
 						<i className="transform transition-transform">
@@ -97,7 +100,7 @@ export default function Card({
 						href={cardLiveLink}
 						target="_blank"
 						rel="noopener noreferrer"
-						className="bg-chars hover:bg-highlight active:bg-highlight-light group inline-flex cursor-pointer items-center gap-2 rounded px-3 py-1 text-lg font-semibold text-white transition-all hover:gap-5"
+						className="bg-chars dark:bg-dark-chars dark:text-dark-background dark:hover:bg-highlight dark:hover:text-background dark:active:bg-highlight-light hover:bg-highlight active:bg-highlight-light group inline-flex cursor-pointer items-center gap-2 rounded px-3 py-1 text-lg font-semibold text-white transition-all hover:gap-5"
 					>
 						{t("button_live")}
 						<i className="transform transition-transform group-hover:rotate-90">

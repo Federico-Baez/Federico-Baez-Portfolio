@@ -8,11 +8,11 @@ export default function CardContainer() {
 	return (
 		<section className="section-projects grid grid-cols-1 gap-4 md:gap-4">
 			{/* About me title */}
-			<title className="text-highlight-dark flex items-center gap-4">
+			<title className="text-highlight-dark dark:text-highlight flex items-center gap-4">
 				<h2 className="items-center text-2xl font-semibold">
 					{t("title_projects")}
 				</h2>
-				<div className="text-highlight mt-1">
+				<div className="text-highlight dark:text-highlight-light mt-1">
 					<FlaskIcon />
 				</div>
 			</title>

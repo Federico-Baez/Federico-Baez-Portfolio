@@ -6,10 +6,10 @@ export default function PresentationContainer() {
 
 	return (
 		<section className="flex flex-col ">
-			<title className="text-chars flex items-center gap-4">
+			<title className="text-chars dark:text-dark-chars flex items-center gap-4">
 				<h2 className="items-center text-4xl font-bold">{t("name")}</h2>
 			</title>
-			<div className="flex space-x-4 text-stone-700">
+			<div className="dark:text-dark-chars text-chars flex space-x-4">
 				<a
 					href="https://www.linkedin.com/in/federico-baez/"
 					target="_blank"
@@ -25,7 +25,7 @@ export default function PresentationContainer() {
 					<GithubIcon />
 				</a>
 			</div>
-			<p>{t("about_me")}</p>
+			<p className="dark:text-dark-chars text-chars">{t("about_me")}</p>
 		</section>
 	);
 }

@@ -31,7 +31,7 @@ export default function LandingPage() {
 				<div ref={presentationContainerRef}>
 					<PresentationContainer />
 				</div>
-				<hr className="border-chars-strong rounded-lg border border-dotted"></hr>
+				<hr className="border-chars-strong dark:border-dark-chars-strong rounded-lg border border-dotted"></hr>
 				{/* Experience section */}
 				<ExperienceContainer />
 				{/* Projects section*/}

@@ -22,7 +22,7 @@ export function ScriptIcon() {
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			height="16"
-			fill="currentColor"
+			fill="#FE640B"
 			width="20"
 			viewBox="0 0 640 512"
 		>
@@ -49,8 +49,8 @@ export function DarkThemeIcon() {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
-			height="16"
-			width="12"
+			height="24"
+			width="24"
 			fill="currentColor"
 			viewBox="0 0 384 512"
 		>
