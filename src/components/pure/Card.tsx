@@ -1,8 +1,10 @@
 import LogoError from "./LogoError";
+import { useTranslation } from "react-i18next";
 import {
 	CSSIcon,
 	HTMLIcon,
 	JSIcon,
+	LinkAltIcon,
 	LinkIcon,
 	ReactIcon,
 	SCSSIcon,
@@ -16,6 +18,7 @@ interface CardProps {
 	cardTitle: string;
 	cardDescription: string;
 	cardLiveLink: string;
+	cardCodeLink: string;
 }
 
 export default function Card({
@@ -24,6 +27,7 @@ export default function Card({
 	cardTitle,
 	cardDescription,
 	cardLiveLink,
+	cardCodeLink,
 }: CardProps) {
 	const techLogoSelector = (tech: string): React.ReactNode => {
 		switch (tech) {
@@ -37,7 +41,7 @@ export default function Card({
 				return <JSIcon />;
 			case "TS":
 				return <TSIcon />;
-			case "ReactJS":
+			case "React":
 				return <ReactIcon />;
 			case "Tailwind":
 				return <TailwindIcon />;
@@ -45,6 +49,8 @@ export default function Card({
 				return <LogoError />;
 		}
 	};
+
+	const { t } = useTranslation();
 
 	return (
 		<article className="overflow-hidden rounded bg-white shadow sm:flex sm:overflow-visible sm:rounded-none sm:bg-transparent sm:shadow-none">
@@ -57,29 +63,48 @@ export default function Card({
 					className="h-full w-full object-cover object-center shadow sm:rounded"
 				></img>
 			</div>
-			<div className="space-y-2 p-5 sm:min-w-[391px] sm:py-3 sm:pl-5 sm:pr-0">
+			<div className="space-y-2 p-5 sm:min-w-[391px] sm:max-w-[391px] sm:py-3 sm:pl-5 sm:pr-0">
 				<div className="text-small flex font-semibold">
 					{cardTechs.map((tech, index) => (
-						<span className="mr-4" key={index}>
+						<div
+							className="group/tooltip relative mr-4"
+							key={index}
+						>
 							{techLogoSelector(tech)}
-						</span>
+							<span className="before:dark:gray-800 pointer-events-none absolute bottom-full left-1/2 z-20 -translate-x-1/2 -translate-y-0 whitespace-nowrap rounded-md bg-gray-800 px-1.5 py-1 text-xs text-gray-200 opacity-0 transition-all before:absolute before:-bottom-1 before:left-1/2 before:-z-10 before:h-2.5 before:w-2.5 before:-translate-x-1/2 before:rotate-45 before:rounded-sm before:bg-gray-800 before:content-[''] group-hover/tooltip:-translate-y-3 group-hover/tooltip:opacity-100 dark:bg-white dark:text-gray-700 before:dark:bg-white">
+								{tech}
+							</span>
+						</div>
 					))}
 				</div>
 				<h2 className="text-chars-strong text-2xl font-semibold leading-tight">
 					{cardTitle}
 				</h2>
 				<p className="text-chars-light">{cardDescription}</p>
-				<a
-					href={cardLiveLink}
-					target="_blank"
-					rel="noopener noreferrer"
-					className="bg-chars hover:bg-highlight active:bg-highlight-light group inline-flex cursor-pointer items-center gap-2 rounded px-3 py-1 text-lg font-semibold text-white transition-all hover:gap-5"
-				>
-					Live
-					<i className="transform transition-transform group-hover:rotate-90">
-						<LinkIcon />
-					</i>
-				</a>
+				<div className="flex gap-3">
+					<a
+						href={cardCodeLink}
+						target="_blank"
+						rel="noopener noreferrer"
+						className="bg-chars hover:bg-highlight active:bg-highlight-light group inline-flex cursor-pointer items-center gap-2 rounded px-3 py-1 text-lg font-semibold text-white transition-all "
+					>
+						{t("button_code")}
+						<i className="transform transition-transform">
+							<LinkAltIcon />
+						</i>
+					</a>
+					<a
+						href={cardLiveLink}
+						target="_blank"
+						rel="noopener noreferrer"
+						className="bg-chars hover:bg-highlight active:bg-highlight-light group inline-flex cursor-pointer items-center gap-2 rounded px-3 py-1 text-lg font-semibold text-white transition-all hover:gap-5"
+					>
+						{t("button_live")}
+						<i className="transform transition-transform group-hover:rotate-90">
+							<LinkIcon />
+						</i>
+					</a>
+				</div>
 			</div>
 			{/* <div className="flex pb-3 pl-5 pt-0">
                     <span className="text-small text-stone-800">2023</span>

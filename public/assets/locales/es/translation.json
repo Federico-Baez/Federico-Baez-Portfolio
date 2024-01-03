@@ -1,0 +1,21 @@
+{
+	"name": "Federico Baez",
+	"about_me": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto cumque incidunt blanditiis odit, iste impedit facilis, cupiditate doloribus accusantium eos, eveniet dicta aut? Laudantium, impedit laborum odit sint fugiat aperiam? Lorem ipsum.",
+	"title_experience": "Experiencia",
+	"job_role": "Desarrollador Frontend",
+	"job_company_name": "Aceleradora UTN FRBA",
+	"job_dates": "Sep 2023 - Dic 2023 (3 months)",
+	"job_enum_1": "Diseño de UX/UI con Figma.",
+	"job_enum_2": "Desarrollo de interfaces de usuario con ReactJS.",
+	"job_enum_3": "Integración con el equipo de backend mediante el uso de APIs.",
+	"job_enum_4": "Agile Squad.",
+	"title_projects": "Proyectos",
+	"button_code": "Código",
+	"button_live": "En Vivo",
+	"calculator_subtitle": "Calculadora Web",
+	"calculator_description": "Calculadora minimalista capaz de resolver operaciones matemáticas simples, con selector de temas y almacenamiento local.",
+	"shortener_subtitle": "Acortador de URLs Web",
+	"shortener_description": "Genera enlaces más cortos, integrado con la API de Short.io y almacenamiento local para guardar los enlaces acortados.",
+	"landing_subtitle": "Landing Page responsiva",
+	"landing_description": "Landing page con un diseño responsivo para mejorar la experiencia de usuario, inspirada en un diseño público de Figma."
+}
