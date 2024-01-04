@@ -11,6 +11,7 @@ import {
 	TSIcon,
 	TailwindIcon,
 } from "./icons";
+import { useState } from "react";
 
 interface CardProps {
 	cardImg: string;
@@ -51,18 +52,33 @@ export default function Card({
 	};
 
 	const { t } = useTranslation();
+	const [hovered, setHovered] = useState(false);
 
 	return (
-		<article className="overflow-hidden rounded bg-white shadow sm:flex sm:overflow-visible sm:rounded-none sm:bg-transparent sm:shadow-none dark:bg-[#56524D]">
-			<div className="h-54 sm:w-[100%] sm:shadow-lg">
-				<img
-					src={cardImg}
-					alt="Calculator App Thumbnail"
-					rel="preload"
-					height="218px"
-					width="428px"
-					className="h-full w-full object-cover object-center shadow sm:rounded"
-				></img>
+		<article
+			className="overflow-hidden rounded bg-white shadow sm:flex sm:overflow-visible sm:rounded-none sm:bg-transparent sm:shadow-none dark:bg-[#2B2926] dark:sm:bg-transparent"
+			onMouseEnter={() => setHovered(true)}
+			onMouseLeave={() => setHovered(false)}
+		>
+			<div className="h-54 overflow-hidden shadow-md sm:w-[100%] sm:rounded">
+				<a
+					href={cardLiveLink}
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<img
+						src={cardImg}
+						alt="Calculator App Thumbnail"
+						rel="preload"
+						height="218px"
+						width="428px"
+						className="h-full w-full transform cursor-pointer object-cover object-center shadow transition-all duration-500 ease-in-out"
+						style={{
+							transform: hovered ? "scale(1.1)" : "scale(1)",
+							transition: "transform 0.35s ease-in-out",
+						}}
+					></img>
+				</a>
 			</div>
 			<div className="space-y-2 p-5 sm:min-w-[391px] sm:max-w-[391px] sm:py-3 sm:pl-5 sm:pr-0">
 				<div className="text-small flex font-semibold">
@@ -89,7 +105,7 @@ export default function Card({
 						href={cardCodeLink}
 						target="_blank"
 						rel="noopener noreferrer"
-						className="bg-chars dark:bg-dark-chars hover:bg-highlight dark:hover:bg-highlight dark:hover:text-background dark:active:bg-highlight-light  active:bg-highlight-light dark:text-dark-background group inline-flex cursor-pointer items-center gap-2 rounded px-3 py-1 text-lg font-semibold text-white transition-all "
+						className="bg-chars dark:bg-dark-chars hover:bg-highlight dark:hover:bg-highlight dark:hover:text-background dark:active:bg-highlight-light  active:bg-highlight-light dark:text-dark-background inline-flex cursor-pointer items-center gap-2 rounded px-3 py-1 text-lg font-semibold text-white transition-all "
 					>
 						{t("button_code")}
 						<i className="transform transition-transform">
