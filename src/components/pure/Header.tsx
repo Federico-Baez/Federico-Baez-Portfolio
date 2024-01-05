@@ -48,7 +48,7 @@ export default function Header({ showDetails }: HeaderProps) {
 						<h1 className="text-chars dark:text-dark-chars text-xl font-bold">
 							{t("name")}
 						</h1>
-						<div className="text-chars dark:text-dark-chars flex items-end space-x-3 align-bottom">
+						{/* <div className="text-chars dark:text-dark-chars flex items-end space-x-3 align-bottom">
 							<a
 								href="https://www.linkedin.com/in/federico-baez/"
 								target="_blank"
@@ -64,7 +64,7 @@ export default function Header({ showDetails }: HeaderProps) {
 							>
 								<GithubIcon />
 							</a>
-						</div>
+						</div> */}
 					</div>
 				) : (
 					<div></div>
