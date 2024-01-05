@@ -1,11 +1,5 @@
 import { useTranslation } from "react-i18next";
-import {
-	GithubIcon,
-	LightThemeIcon,
-	DarkThemeIcon,
-	LinkedinIcon,
-	ScriptIcon,
-} from "./icons";
+import { LightThemeIcon, DarkThemeIcon, ScriptIcon } from "./icons";
 import { useEffect, useState } from "react";
 
 interface HeaderProps {
