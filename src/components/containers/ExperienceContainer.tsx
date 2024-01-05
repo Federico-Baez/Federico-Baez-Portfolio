@@ -16,14 +16,20 @@ export default function ExperienceContainer() {
 			</title>
 			<article className="flex flex-col gap-3">
 				<div className="flex flex-col gap-1">
-					<div className="flex gap-2">
-						<h3 className="text-chars-strong dark:text-dark-chars-strong font-bold">
-							{t("job_role")}
-						</h3>
-						<p className="text-black dark:text-white"> | </p>
-						<h4 className="text-chars-light dark:text-dark-chars-light">
-							{t("job_company_name")}
-						</h4>
+					<div className="flex">
+						<div className="flex flex-col sm:flex-row">
+							<div className="flex sm:mb-0">
+								<h3 className="text-chars-strong dark:text-dark-chars-strong font-bold">
+									{t("job_role")}
+								</h3>
+								<p className="mx-2 text-black dark:text-white">
+									{"|"}
+								</p>
+							</div>
+							<h4 className="text-chars-light dark:text-dark-chars-light">
+								{t("job_company_name")}
+							</h4>
+						</div>
 					</div>
 					<h5 className="text-chars-light dark:text-dark-chars-light text-sm">
 						{t("job_dates")}
