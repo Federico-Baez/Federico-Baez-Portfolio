@@ -4,6 +4,7 @@ import Header from "../pure/Header";
 import CardContainer from "./CardContainer";
 import ExperienceContainer from "./ExperienceContainer";
 import PresentationContainer from "./PresentationContainer";
+import Footer from "../pure/Footer";
 
 export default function LandingPage() {
 	const [isScrolled, setIsScrolled] = useState(false);
@@ -38,6 +39,7 @@ export default function LandingPage() {
 				<CardContainer />
 			</main>
 			{/* <Footer /> */}
+			<Footer />
 		</div>
 	);
 }

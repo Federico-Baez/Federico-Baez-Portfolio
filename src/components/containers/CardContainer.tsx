@@ -19,7 +19,7 @@ export default function CardContainer() {
 			<div className="grid grid-cols-1 gap-6">
 				<Card
 					cardImg="/Calculator-Thumbnail.png"
-					cardTechs={["HTML", "CSS", "SCSS", "JS", "React"]}
+					cardTechs={["HTML", "CSS", "SCSS", "JavaScript", "React"]}
 					cardTitle={t("calculator_subtitle")}
 					cardDescription={t("calculator_description")}
 					cardLiveLink="https://federico-baez.github.io/Calculator-App-React/"
@@ -27,7 +27,7 @@ export default function CardContainer() {
 				/>
 				<Card
 					cardImg="/Shortener-Thumbnail.png"
-					cardTechs={["HTML", "CSS", "SCSS", "JS", "React"]}
+					cardTechs={["HTML", "CSS", "SCSS", "JavaScript", "React"]}
 					cardTitle={t("shortener_subtitle")}
 					cardDescription={t("shortener_description")}
 					cardLiveLink="https://federico-baez.github.io/URL-Shortener-App-React/"

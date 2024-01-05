@@ -38,9 +38,9 @@ export default function Card({
 				return <CSSIcon />;
 			case "SCSS":
 				return <SCSSIcon />;
-			case "JS":
+			case "JavaScript":
 				return <JSIcon />;
-			case "TS":
+			case "TypeScript":
 				return <TSIcon />;
 			case "React":
 				return <ReactIcon />;
