@@ -14,7 +14,7 @@ export default function LandingPage() {
 			if (presentationContainerRef.current) {
 				const rect =
 					presentationContainerRef.current.getBoundingClientRect();
-				const headerHeight = 140;
+				const headerHeight = 160;
 				setIsScrolled(window.scrollY >= rect.bottom + headerHeight);
 			}
 		};
@@ -26,7 +26,7 @@ export default function LandingPage() {
 	return (
 		<div>
 			<Header showDetails={isScrolled} />
-			<main className="mx-auto grid max-w-3xl gap-8 px-4 pb-8 pt-4">
+			<main className="mx-auto grid max-w-3xl gap-8 px-4 pb-8 pt-8">
 				{/* About me section */}
 				<div ref={presentationContainerRef}>
 					<PresentationContainer />

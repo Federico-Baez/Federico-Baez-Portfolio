@@ -1,5 +1,5 @@
 import Card from "../pure/Card";
-import { FlaskIcon } from "../pure/icons";
+import { TerminalIcon } from "../pure/icons";
 import { useTranslation } from "react-i18next";
 
 export default function CardContainer() {
@@ -13,7 +13,7 @@ export default function CardContainer() {
 					{t("title_projects")}
 				</h2>
 				<div className="text-highlight dark:text-highlight-light mt-1">
-					<FlaskIcon />
+					<TerminalIcon />
 				</div>
 			</title>
 			<div className="grid grid-cols-1 gap-6">

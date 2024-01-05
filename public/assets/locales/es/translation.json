@@ -1,6 +1,8 @@
 {
 	"name": "Federico Baez",
-	"about_me": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto cumque incidunt blanditiis odit, iste impedit facilis, cupiditate doloribus accusantium eos, eveniet dicta aut? Laudantium, impedit laborum odit sint fugiat aperiam? Lorem ipsum.",
+	"about_me_1": "+1 año de experiencia.",
+	"about_me_2": " Apasionado por la tecnología y la programación de aplicaciones web.",
+	"about_me_3": "Actualmente estudiando Ingeniería de Sistemas de Información.",
 	"title_experience": "Experiencia",
 	"job_role": "Desarrollador Frontend",
 	"job_company_name": "Aceleradora UTN FRBA",
@@ -17,5 +19,5 @@
 	"shortener_subtitle": "Acortador de URLs Web",
 	"shortener_description": "Genera enlaces más cortos, integrado con la API de Short.io y almacenamiento local para guardar los enlaces acortados.",
 	"landing_subtitle": "Landing Page responsiva",
-	"landing_description": "Landing page con un diseño responsivo para mejorar la experiencia de usuario, inspirada en un diseño público de Figma."
+	"landing_description": "Landing page con un diseño responsivo para mejorar la experiencia de usuario, inspirada en un diseño de coinbase en Figma."
 }

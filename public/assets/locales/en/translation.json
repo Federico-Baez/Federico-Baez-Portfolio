@@ -1,6 +1,8 @@
 {
 	"name": "Federico Baez",
-	"about_me": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto cumque incidunt blanditiis odit, iste impedit facilis, cupiditate doloribus accusantium eos, eveniet dicta aut? Laudantium, impedit laborum odit sint fugiat aperiam? Lorem ipsum.",
+	"about_me_1": "+1 year of experience.",
+	"about_me_2": " Passionate about technology and programming web apps.",
+	"about_me_3": "Currently studying Information Systems Engineering.",
 	"title_experience": "Experience",
 	"job_role": "Frontend Developer",
 	"job_company_name": "Aceleradora UTN FRBA",
@@ -13,9 +15,9 @@
 	"button_code": "Code",
 	"button_live": "Live",
 	"calculator_subtitle": "Calculator Web App",
-	"calculator_description": "Minimalistic carculator capable of solving simple math operations, with theme selector and local storage.",
+	"calculator_description": "Minimalistic calculator capable of solving simple math operations, with theme selector and local storage.",
 	"shortener_subtitle": "URL Shortener Web App",
 	"shortener_description": "Makes your links shorter, integrated with the Short.io API, and local storage to save the shortened links.",
 	"landing_subtitle": "Responsive Landing Page",
-	"landing_description": "Landing page with a responsive layout to improve the user experience, inspired by a public Figma design."
+	"landing_description": "Landing page with a responsive layout to improve the user experience, inspired by a coinbase Figma design."
 }

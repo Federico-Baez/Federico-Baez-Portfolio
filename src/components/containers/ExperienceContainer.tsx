@@ -1,4 +1,4 @@
-import { TerminalIcon } from "../pure/icons";
+import { SuitcaseIcon } from "../pure/icons";
 import { useTranslation } from "react-i18next";
 
 export default function ExperienceContainer() {
@@ -11,7 +11,7 @@ export default function ExperienceContainer() {
 					{t("title_experience")}
 				</h2>
 				<div className="text-highlight dark:text-highlight-light mt-1">
-					<TerminalIcon />
+					<SuitcaseIcon />
 				</div>
 			</title>
 			<article className="flex flex-col gap-3">
