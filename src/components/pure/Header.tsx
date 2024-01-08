@@ -65,12 +65,14 @@ export default function Header({ showDetails }: HeaderProps) {
 				)}
 				<div className="flex items-center gap-4 pr-4">
 					<button
+						title="Theme Toggler"
 						onClick={toggleTheme}
 						className="text-chars-light hover:text-highlight active:text-highlight-light dark:text-dark-chars-light rounded-full transition-colors"
 					>
 						{darkMode ? <DarkThemeIcon /> : <LightThemeIcon />}
 					</button>
 					<button
+						title="Language Toggler"
 						onClick={changeLanguage}
 						className="text-chars-light hover:text-highlight dark:text-dark-chars-light active:text-highlight-light h-8 w-8 rounded-full font-semibold transition-colors"
 					>

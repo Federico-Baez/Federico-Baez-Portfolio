@@ -1,13 +1,11 @@
 import LogoError from "./LogoError";
-import { CSSIcon, HTMLIcon, ReactIcon, TSIcon, TailwindIcon } from "./icons";
+import { HTMLIcon, ReactIcon, TSIcon, TailwindIcon } from "./icons";
 
 export default function Footer() {
 	const techLogoSelector = (tech: string): React.ReactNode => {
 		switch (tech) {
 			case "HTML":
 				return <HTMLIcon />;
-			case "CSS":
-				return <CSSIcon />;
 			case "TypeScript":
 				return <TSIcon />;
 			case "React":

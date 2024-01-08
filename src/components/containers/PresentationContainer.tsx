@@ -12,7 +12,7 @@ export default function PresentationContainer() {
 			</title>
 			<div>
 				<p className="dark:text-dark-chars text-chars">
-					<strong className="text-principal dark:text-principal-light">
+					<strong className="text-principal dark:text-dark-principal-light">
 						{t("about_me_1")}
 					</strong>
 					{t("about_me_2")}

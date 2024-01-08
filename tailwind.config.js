@@ -32,7 +32,7 @@ export default {
 					DEFAULT: "#44403C",
 				},
 				"dark-principal": {
-					light: "#B48FF5",
+					light: "#C1A1F7" /* #3F7 */,
 					DEFAULT: "#7C3AED",
 				},
 				"dark-secondary": {

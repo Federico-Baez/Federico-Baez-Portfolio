@@ -4,6 +4,12 @@ import App from "./App.tsx";
 import "./index.css";
 import "./i18n";
 
+if (process.env.NODE_ENV !== "production") {
+	import("@axe-core/react").then((axe) => {
+		axe.default(React, ReactDOM, 1000);
+	});
+}
+
 ReactDOM.createRoot(document.getElementById("root")!).render(
 	<React.StrictMode>
 		<App />
