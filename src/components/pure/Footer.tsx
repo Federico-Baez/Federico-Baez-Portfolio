@@ -1,7 +1,10 @@
+import { useTranslation } from "react-i18next";
 import LogoError from "./LogoError";
 import { HTMLIcon, ReactIcon, TSIcon, TailwindIcon } from "./icons";
 
 export default function Footer() {
+	const { t } = useTranslation();
+
 	const techLogoSelector = (tech: string): React.ReactNode => {
 		switch (tech) {
 			case "HTML":
@@ -22,7 +25,7 @@ export default function Footer() {
 	return (
 		<footer className="m-4 flex flex-col items-center gap-3 pb-6">
 			<div className="text-chars-strong dark:text-dark-chars-strong items-center font-semibold">
-				<h3>This page was made using</h3>
+				<h3>{t("footer")}</h3>
 			</div>
 			<div className="text-small flex font-semibold">
 				{techs.map((tech, index) => (

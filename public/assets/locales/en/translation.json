@@ -19,5 +19,6 @@
 	"shortener_subtitle": "URL Shortener Web App",
 	"shortener_description": "Makes your links shorter, integrated with the Short.io API, and local storage to save the shortened links.",
 	"landing_subtitle": "Responsive Landing Page",
-	"landing_description": "Landing page with a responsive layout to improve the user experience, inspired by a coinbase Figma design."
+	"landing_description": "Landing page with a responsive layout to improve the user experience, inspired by a coinbase Figma design.",
+	"footer": "This page was made using"
 }

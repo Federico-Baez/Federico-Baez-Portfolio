@@ -19,5 +19,6 @@
 	"shortener_subtitle": "Acortador de URLs Web",
 	"shortener_description": "Genera enlaces más cortos, integrado con la API de Short.io y almacenamiento local para guardar los enlaces acortados.",
 	"landing_subtitle": "Landing Page responsiva",
-	"landing_description": "Landing page con un diseño responsivo para mejorar la experiencia de usuario, inspirada en un diseño de coinbase en Figma."
+	"landing_description": "Landing page con un diseño responsivo para mejorar la experiencia de usuario, inspirada en un diseño de coinbase en Figma.",
+	"footer": "Esta pagina fue hecha utilizando"
 }
